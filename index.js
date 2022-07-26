@@ -30,7 +30,8 @@ const getFilmsPerPage = async (originalUrl, url) => {
     return filmInfo;
 }
 
-await getFilmsPerPage(originalUrl, 'https://www3.iomovies.top/filter?type=tv&quality=all&release_year=all&genre=37&country=all')
+await getFilmsPerPage(originalUrl, 'put the link') 
+                                //  https://www3.iomovies.top/filter?type=tv&quality=all&release_year=all&genre=37&country=all - that's like sample 
 const getFullInfoFromFile = async (fileName = 'films.json') => {
     const filmInfo = JSON.parse(await fs.readFile(fileName, {encoding:"utf-8"}))
     for (let i = 0; i < filmInfo.length; i++) {
